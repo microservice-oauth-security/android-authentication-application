@@ -19,4 +19,4 @@ Once the user authenticates successfully from the authentication screen, user wi
    `<domain includeSubdomains="true">add your backend Hostname or IP address here</domain>`
 
 # Video Reference
-For detailed video explanation of this project please visit my YouTube channel [CodeWithAnish](https://www.youtube.com/@CodeWithAnish)
+For detailed video explanation of this project please visit my YouTube channel [CodeWithAnish](https://youtu.be/rSA7yMG2eeY)
