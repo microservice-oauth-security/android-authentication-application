@@ -16,7 +16,7 @@ Once the user authenticates successfully from the authentication screen, user wi
 
 3. #### Clear Text Traffic
    To enable http call without SSL from the android application, please add your backend Hostname or IP address in the file *app/src/main/res/xml/network_security_config.xml* as shown below.
-   `<domain includeSubdomains="true">ddd your backend Hostname or IP address here</domain>`
+   `<domain includeSubdomains="true">add your backend Hostname or IP address here</domain>`
 
 # Video Reference
 For detailed video explanation of this project please visit my YouTube channel [CodeWithAnish](https://www.youtube.com/@CodeWithAnish)
