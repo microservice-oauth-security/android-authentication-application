@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/welcome_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/logout_btn"
+        android:layout_alignBaseline="@+id/logout_btn"
+        android:text="@string/welcome"/>
+
+    <Button
+        android:id="@+id/logout_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/logout"
+        android:textColor="@color/red"
+        android:textSize="10sp"
+        app:strokeColor="@color/grey"
+        />
+
+    <View
+        android:layout_below="@+id/logout_btn"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/roles_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/divider"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Your Roles" />
+
+    <ListView
+        android:id="@+id/roles_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/roles_title"/>
+
+    <Button
+        android:id="@+id/fetch_employee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/roles_list"
+        android:text="Fetch Employees"/>
+
+    <TableLayout
+        android:id="@+id/employee_table"
+        android:layout_below="@+id/fetch_employee"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2">
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/error_view"
+        android:layout_below="@+id/employee_table"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/red"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_oauth_client_id">"Add your google web client id for the Oauth project"</string>
+</resources>
