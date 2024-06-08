@@ -15,7 +15,7 @@ Once the user authenticates successfully from the authentication screen, user wi
    [Demo Microservice](https://github.com/microservice-oauth-security/demo-microservice)
 
 3. #### Clear Text Traffic
-   To enable http call without SSL from the android application, please add your backend Hostname or IP address in the file *app/src/main/res/xml/network_security_config.xml* as shown below.
+   To enable http call without SSL from the android application, please add your backend Hostname or IP address in the file *app/src/main/res/xml/network_security_config.xml* as shown below.  
    `<domain includeSubdomains="true">add your backend Hostname or IP address here</domain>`
 
 # Video Reference
